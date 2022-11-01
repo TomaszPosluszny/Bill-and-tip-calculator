@@ -9,6 +9,20 @@ const cost = document.querySelector('.cost');
 const showBill = () => {
 	if (price.value == '' || people.value == '' || tip.value == 0) {
 		error.textContent = 'Uzupełnij wszystkie pola!';
+	} else {
+		error.textContent = '';
+		costInfo.style.display = 'none';
+		countBill();
 	}
 };
+const countBill = () => {
+	const newPrice = parseFloat(price.value);
+	const newPeople = parseFloat(people.value);
+	const newTip = parseFloat(tip.value);
+
+	const sum = (newPrice + newPrice * newTip) / newPeople;
+	costInfo.style.display = 'block';
+	cost.textContent = sum.toFixed(2)
+};
+
 countBtn.addEventListener('click', showBill);
