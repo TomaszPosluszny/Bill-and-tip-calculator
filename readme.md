@@ -19,4 +19,4 @@ The application, after entering the data, calculates how much the person should 
 
 ## Setup
 
-[Link to the page](https://tomaszposluszny.github.io/Bill-and-tip-calculator/)
+[Link to the page](https://tomaszposluszny.github.io/bill-and-tip-calculator-JS/)
